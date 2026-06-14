@@ -1,16 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://fm1main0scene1"]
+[gd_scene format=3 uid="uid://begdr0sxrvir3"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_main00"]
-[ext_resource type="Script" path="res://player.gd" id="2_plyr00"]
+[ext_resource type="Script" uid="uid://db6qps4sim7qs" path="res://main.gd" id="1_main00"]
+[ext_resource type="Script" uid="uid://c3bf0ey1q7l01" path="res://player.gd" id="2_plyr00"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_001"]
 radius = 30.0
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=1079673838]
 script = ExtResource("1_main00")
 
-[node name="Player" type="CharacterBody2D" parent="."]
+[node name="Player" type="CharacterBody2D" parent="." unique_id=2142638877]
 script = ExtResource("2_plyr00")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1675389925]
 shape = SubResource("CircleShape2D_001")
